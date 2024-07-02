@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAGINASOBREANIMAKER</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(128, 94, 206);
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .botones {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .botones button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    flex-grow: 1;
+  }
+  #seccion1, #seccion2 {
+    display: none;
+    padding: 20px;
+  }
+  h{
+    font-size: 50px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>¡HOLA EN ESTE SITIO ENCONTRARAS INFORMACION SOBRE UN PROTOBOARD!</h1>
+  <div class="botones">
+    <button onclick="mostrarSeccion('seccion1')">FUNCIONAMIENTO</button>
+    <button onclick="mostrarSeccion('seccion2')">UTILIDAD</button>
+    <button onclick="mostrarSeccion('seccion3')">PRACTICAS</button>
+    <button onclick="mostrarSeccion('seccion4')">LECCIONES</button>
+  </div>
+</header>
+<center><img src="descarga.png" alt="" width="550px" height="300px"></center>
+<div id="seccion1">
+  <h2>¿Qué es?</h2>
+  <p>La Protoboard es una placa de pruebas en la que se pueden insertar elementos electrónicos y cables con los que se arman circuitos permitendo probar 
+    el diseño de un circuito sin la necesidad de soldar o desoldar componentes lo que permite armar y modificar circuitos con mayor velocidad. Las 
+    Protoboards tienen orificios conectados entre si por medio de pequeñas laminas metálicas.
+    </p>
+    <img src="images.jfif" alt="">
+    <h2>¿Cómo funciona?</h2>
+    <p>Una protoboard es una placa con orificios dónde se conectan cada uno de los componentes. Estos orificios están luego internamente conectados siguiendo
+      un patrón horizontal o vertical. En una protoboard de tamaño medio, se pueden distinguir dos zonas:</p>
+      <ol>
+        <li>Una zona central donde se colocan los componentes. Aquí los orificios están conectados horizontalmente.</li>
+        <li>Los laterales, de “zona de alimentación ”. Los orificios están conectados verticalmente.</li>
+      </ol>
+      <img src="Captura de pantalla 2024-07-02 090409.png" alt="" width="500" height="300">
+<h2>Estructura del Protoboard</h2>
+<P>Un Protoboard se divide en tres regiones</P>
+<ol>
+  <li>Canal Central</li>
+  <p>Es la región localizada en el medio del protoboard, se utiliza para colocar los circuitos integrados</p>
+  <li>Buses</li>
+  <p>Se localizan en ambos extremos del protoboard, se representan por las líneas rojas y azules, la fuente de poder generalmente se conecta aquí</p>
+  <li>Pistas</li>
+  <p>Se localizan en la parte central de protoboard, se representan y conducen según las lineas rosas</p>
+  <img src="Captura de pantalla 2024-07-01 235307.png" alt="" width="500" height="300">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kM62e3EEXVg?si=t8KPI97befdGnsAq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</ol>
+<h2>Resistencias</h2>
+<p>para poder colocar una resistencia en la protoboard primero debemos saber codigo de colores para saber de cuanto es la resistencia</p>
+<img src="Captura de pantalla 2024-07-02 093627.png" alt="">
+<p>Si la resistencia tiene una banda de colores rojo, negro, café, significa que la resistencia tiene el siguiente
+  valor según se consulta en la tabla de colores:
+  La primera banda es roja, indica 2
+  La segunda banda es negra, indica 1
+  La tercera banda es café, indica x10. El valor de la resistencia por tanto es 21x10 = 210 ohmios.
+  Si la resistencia fuera violeta, naranja, negro, la resistencia sería de 73x1 = 73 ohmios.</p>
+  <h2>Polaridad de los elementos electrónicos</h2>
+  <p>Para que un proyecto en la protoboard no se tan confunso o para que funcione siempre tenemos que saber cual es la Polaridad
+    de los elementos electrónicos para poder conectarlos correctamente para ello se utiliza un multimetro. La resistencia es el unico elemento que no tiene polaridad</p>
+    <img src="Captura de pantalla 2024-07-02 094051.png" alt="">
+    <h2>Uso del multimetro</h2>
+    <ul>
+      <li>En esto ejemplo se hará uso del multímetro para:</li>
+      <ol>
+        <li>Verificar el voltaje de salida de la fuente y de algún elemento</li>
+        <ul><li>Verifique que la perilla se encuentre en la zona de “voltaje”</li><li>Conecte las sondas a los cables donde quiere medir la diferencia de potencial</li></ul>
+        <img src="Captura de pantalla 2024-07-02 094409.png" alt="">
+        <li>Verificar la continuidad entre 2 nodos. Se dice que hay continuidad entre 2 nodos cuando no hay
+          diferencia eléctrica entre ellos.</li>
+          <ul>
+            <li>Verifique que el multímetro se encuentre desconectado y rote la perilla a la posición</li>
+            <li>Conecte la sonda roja del multímetro al pin negativo del led y la sonda negra a la tierra de la fuente.
+              El multímetro debería pitar. Repita para los diferentes nodos en los que desee verificar continuidad
+              para garantizar la conexión.</li>
+          </ul>
+      </ol>
+    </ul>
+</div>
+
+<div id="seccion2">
+  <h2>Utilidad</h2>
+  <p>La Protoboard es una de las herramientas indispensables en el ámbito de la electrónica y muy sencilla de usar, es aquí donde se prueban y 
+    modifican los circuitos. Es de suma importancia conocer el sentido de continuidad (flujo de energía) que lleva cada parte de la protoboard 
+    para obtener buenos resultados y así poder armar dentro de ella nuestros circuitos. Cuando se tiene entendida la configuración de esta 
+    herramienta se convierte en algo flexible, donde podemos experimentar y convertir en algo tangible nuestros diagramas electrónicos (esquemáticos).</p>
+    <ol>
+      <li>Cuerpo (flujo horizontal)</li>
+      <img src="FD8MTLFJ6MGAM69.webp" alt="">
+      <p>Es la parte donde están colocados la mayoría de los componentes electrónicos. Lo localizamos fácilmente porque están marcados con 
+        números de arriba a abajo y letras de izquierda a derecha, haciendo de esta una fácil localización cuando ya se tienen muchos elementos 
+        dentro del circuito. Estas filas conducen de manera horizontal gracias a unas placas metálicas que se encuentran detrás de la protoboard. 
+        En medio hay una separación, impidiendo la continuidad en toda la fila de un mismo número. Esto es útil para colocar circuitos integrados, 
+        ya que evitan que los pines del componente se conecten entre sí cuando no es necesario.</p>
+        <li>Alimentación (flujo vertical)</li>
+        <img src="FHW9P6XJ6MGAKVU.webp" alt=""><img src="FKQBDISJ6MGANL3.webp" alt="">
+        <p>Las líneas verticales rojas y azules que aparecen en los extremos de la protoboard nos ayudan a visualizar la alimentación de 
+          energía en la parte positiva (roja) y negativa (azul). Nótese que en la protoboard mostrada en la mitad de la columna está 
+          interrumpida la línea, esto nos ayuda de mucho si debemos utilizar diferentes fuentes de alimentación en nuestro circuito. 
+          Para tener continuidad en toda la columna basta con colocar un par de cables uniendo las líneas del mismo color. Al conectar una 
+          fuente de alimentación en cualquier punto de la columna, toda esta tendrá el polo que corresponde, cuando se quiera vincular un 
+          componente a la alimentación, basta colocar un cable que una la línea ya energizada hacia el elemento deseado.</p>
+          <li>Una Sola Fuente De Alimentación</li>
+          <img src="FAE20UVJ6MGAKXC.webp" alt="" width="400" height="200"><img src="FR5QPSPJ6MGANVQ.webp" alt="" width="400" height="200">
+          <p>Cuando en nuestro proyecto se utilizará sólo un tipo de voltaje y todos los elementos estarán conectados hacia él se recomienda 
+            "puentear" las líneas de alimentación de cada extremo de la protoboard; Esto es conectar un cable que una las líneas del mismo 
+            color en cada extremo. Con esto nos aseguramos que existe energía en las 4 líneas de la herramienta.</p>
+            <li>Conectar varias placas Protoboard</li>
+            <img src="FQCPQVAJ6MGAO5M.webp" alt="" width="400" height="200"><img src="FKY5546J6MGAO5I.webp" alt="" width="400" height="200"><img src="F8JESI5J6MGANVN.webp" alt="" width="400" height="200">
+            <p>Cuando son proyectos muy grandes a veces no basta una sola protoboard. El diseño de la tableta te permite conectar varias, en el modelo mostrado basta con deslizar la columna de alimentación para quitarla 
+              y conectarla con la siguiente protoboard.</p>
+    </ol>
+   <h2>Recomendaciones para utilizar el protoboard</h2>
+   
+   <ul>
+    <li>Hacer las siguientes conexiones</li>
+    <img src="Captura de pantalla 2024-07-02 000450.png" alt=""width="400" height="200">
+    <ol>
+      <li>Esta conexión sirve para que ambos paraes de buses conduzcan corriente al agregarles una fuente de poder,
+        así es mas facil manipular los circuitos electrónicos</li>
+      <li>Algunos Protoboards tienen separada la parte media de los buses, es por eso que se realiza esta conexión 
+        para darle continuidad a la corriente</li>
+    </ol>
+    <li>Coloca los circuitos integrados en una sola dirección, de derecha a izquierda o viseversa </li>
+    <li>Evita el cableado aéreo</li>
+    <ol>
+      <li>Resulta confuso en circuitos complejos</li>
+      <li>Mejora la comprensión y la portabilidad</li>
+    </ol>
+   </ul>
+   <h2>Ventajas y Desventajas</h2>
+  <ul>
+    <li>
+      Ventajas
+    </li>
+    <ol>
+    <li>No se requiere soldar los elementos electrónicos</li>
+    <li>En poco tiempo se puede armar un circuito determinado</li>
+    <li>Se evita el diseño y construccion de Pcb</li>
+    <li>Se puede reutilizar</li>
+  </ol>
+  </ul>
+  <ul>
+    <li>
+      Desventajas
+    </li>
+    <ol>
+      <li>No se debe conectar elementos electrónicos de potencia</li>
+      <li>Algunos elementos electronicos no se pueden conectar debiddo a su forma y disposición de terminales</li>
+      <li>Genera capacidades parasitas</li>
+      <li>Sus láminas metálicas actúan como antena y atraen ruidos electrónicos</li>
+      <li>Algunos circuitos funcionan mal, como por ejemplo, los circuitos de radio</li>
+    </ol>
+  </ul>
+</div>
+<div id="seccion3"> 
+
+  <h2>circuito paralelo con leds</h2>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/oq0AP9EEdtU?si=Tsrn--vX94J_K4_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <h2>Sensor de oscuridad</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/2blGHqdFZSM?si=ViLWa4SNPnIwBjfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <h2>Medodor de agua</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jBFzxvy2KPw?si=KxdXBWEEFm2xPdtb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div id="seccion4">
+<h2>Lección sobre las resistencias</h2>
+<ol>
+  <li><a href="https://www.educaplay.com/learning-resources/6074033-resistencias.html">resistencia</a></li>
+  <li><a href="https://es.educaplay.com/recursos-educativos/628456-resistencia_electronica.html">resistencia</a></li>
+</ol>
+<h2>Lección sobre el multimetro</h2>
+<ol>
+  <li><a href="https://es.educaplay.com/recursos-educativos/1047523-partes_del_multimetro_digital.html">Multimetro</a></li>
+  <li><a href="https://es.educaplay.com/recursos-educativos/1101980-multimetro.html">Multimetro</a></li>
+</ol>
+<h2>Lección sobre el protoboard</h2>
+<ol>
+  <li><a href="https://es.educaplay.com/recursos-educativos/7898916-protoboard.html">Protoboard</a></li>
+  <li><a href="https://es.educaplay.com/recursos-educativos/2088045-protoboard.html">Protoboard</a></li>
+  <li><a href="https://www.educaplay.com/learning-resources/2273361-circuito_sobre_protoboard.html">Protoboard</a></li>
+</ol>
+</div>
+
+<script>
+  function mostrarSeccion(id) {
+    var secciones = document.querySelectorAll('div[id^="seccion"]');
+    secciones.forEach(function(seccion) {
+      seccion.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
